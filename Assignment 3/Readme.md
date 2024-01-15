@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>WebPage Clone</h1></head>
+
+<body>
+
+<h3>ADDED IMAGE VIA LOCAL STORAGE</h3>
+<img src="C:\Users\User\Desktop\New folder (2)\New folder\car.jpeg" alt="Image"width="300" height="200">
+
+<h3>ADDED IMAGE VIA CDN</h3>
+<img src="https://img.freepik.com/free-photo/offroader-jeep-driving-highway_114579-5029.jpg?w=1060&t=st=1705323555~exp=1705324155~hmac=132ffe49e11d431d7e7debe4e6735f3dbdcd1f55910911650940fa77acdf3ca5" alt="Image"width="300" height="200">
+
+<h3>ADDED VIDEO VIA CDN</h3>
+<video src="https://www.youtube.com/embed/tgbNymZ7vqY" controls></video>
+
+<form>
+   <label for="username">Username:</label>
+   <input type="text" id="username" name="username"><br><br>
+   <label for="password">Password:</label>
+   <input type="password" id="password" name="password"><br><br>
+   <input type="submit" value="Submit">
+</form>
+
+<h3>HTML ENTRIES</h3>
+<ul>
+   <li>Copyright: &#169;</li>
+   <li>Trademark: &#8482;</li>
+   <li>Ampersand: &#38;</li>
+   <li>less than: &#60;</li>
+   <li>greater than: &#62;</li>
+</ul>
+</body>
+</html>
