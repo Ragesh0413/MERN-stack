@@ -13,6 +13,7 @@
 <h3>ADDED VIDEO VIA CDN</h3>
 <video src="https://www.youtube.com/embed/tgbNymZ7vqY" controls></video>
 
+<h2>Create the form</h2>
 <form>
    <label for="username">Username:</label>
    <input type="text" id="username" name="username"><br><br>
