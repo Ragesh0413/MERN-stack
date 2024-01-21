@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Page</title>
+    <style>
+        body {
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/chatbg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Roboto, sans-serif;
+            color: #ffffff;
+        }
+        
+        h1 {
+            background-color: #323f4b;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .message {
+            background-color: #47a3f3;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            text-align: left
+        }
+        
+        .message.sender {
+            background-color: #52606d;
+            color: #ffffff;
+            border-radius: 3px;
+            text-align: right
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Rahul</h1>
+    <div class="chat-container">
+        <div class="message sender">Hello Rahul! How are you?</div>
+        <div class="message receiver">Hi Varakumar! I'm good, thanks. How about you?</div>
+        <div class="message sender">I'm fine, I published my website recently</div>
+        <div class="message receiver">Oh great Varakumar! Can you send me the URL?</div>
+        <div class="message sender">https://varakumar.ccbp.tech</div>
+        <div class="message receiver">Awesome Varakumar, where did you learn?</div>
+        <div class="message sender">NxtWave CCBP 4.0 Program</div>
+    </div>
+</body>
+</html>
