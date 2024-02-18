@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 11</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="2xl:container">
+        <div class="w-[90%] mx-auto grid-cols-1 md:grid-col-2 lg:grid-cols-3 ">
+            <div class="flex flex-col justify-center items-center w-96 h-[100%] bg-gradient-to-r from-purple-500 to-pink-500 text-[Poppins]"> 
+                <h1 class="text-[Poppins] text-2xl my-3 font-extrabold text-white ">UPDATA PASSWORD</h1>
+                <div >
+                    <form id="updatePasswordForm">
+                        <label class="text-[Poppins] text-white font-bold"for="newPassword">NEW PASSWORD:</label><br>
+                        <input class="rounded-md my-3"type="password" id="newPassword" name="newPassword" placeholder="Create new password"><br>
+                        <p id="newPasswordErrMsg"></p>
+                    
+                        <label class="text-[Poppins] text-white font-bold "for="confirmPassword">CONFIRM PASSWORD:</label><br>
+                        <input class="rounded-md my-3" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password"><br>
+                        <p id="confirmPasswordErrMsg"></p>
+                        <div class="text-[Poppins] mx-auto my-3 bg-blue-800 text-white border-x-2 border-y-2 w-32 py-3 px-10 rounded-lg ">
+                            <button type="submit" id="updateBtn">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    const newPasswordInput = document.getElementById('newPassword');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    const newPasswordErrMsg = document.getElementById('newPasswordErrMsg');
+    const confirmPasswordErrMsg = document.getElementById('confirmPasswordErrMsg');
+    const updatePasswordForm = document.getElementById('updatePasswordForm');
+
+    newPasswordInput.addEventListener('blur', function() {
+        if (newPasswordInput.value === '') {
+            newPasswordErrMsg.textContent = 'Required *';
+        } else {
+            newPasswordErrMsg.textContent = '';
+        }
+    });
+
+    confirmPasswordInput.addEventListener('blur', function() {
+        if (confirmPasswordInput.value === '') {
+            confirmPasswordErrMsg.textContent = 'Password must be same';
+        } else {
+            confirmPasswordErrMsg.textContent = '';
+        }
+    });
+
+    updatePasswordForm.addEventListener('submit', function(event) {
+        if (newPasswordInput.value === '') {
+            newPasswordErrMsg.textContent = 'Please enter a new password.';
+        } else {
+            newPasswordErrMsg.textContent = '';
+        }
+
+        if (confirmPasswordInput.value === '') {
+            confirmPasswordErrMsg.textContent = 'Please confirm your password.';
+        } else {
+            confirmPasswordErrMsg.textContent = '';
+        }
+
+        event.preventDefault(); // Prevent the form from submitting
+    });
+</script>
+
+</body>
+</html>
